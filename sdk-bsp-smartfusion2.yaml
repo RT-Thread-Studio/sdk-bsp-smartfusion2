@@ -1,0 +1,104 @@
+board:
+  buy_url_cn: https://item.taobao.com/item.htm?spm=a230r.1.14.68.4a107d25Bs7loc&id=597131079826&ns=1&abbucket=13#detail
+  buy_url_global: https://item.taobao.com/item.htm?spm=a230r.1.14.68.4a107d25Bs7loc&id=597131079826&ns=1&abbucket=13#detail
+  debug_interface: SWD
+  debugger: JLINK
+  description_en: M2S010 belongs to SmartFusion2 series, which is an intelligent hybrid FPGA. In addition to the logic part of FPGA Fabric, the chip also includes an ARM Cortex-M3 core MCU, the main frequency is up to 166MHz, 256KB ENVM, 64KB ESRAM, integrated GPIO, UART, I2C, SPI, CAN, USB and other basic peripherals.
+  description_zh: M2S010 属于 SmartFusion2系列，是一款智能混合型 FPGA，片上除了 FPGA Fabric 逻辑部分，还包括一个 ARM Cortex-M3 内核的 MCU，主频最高 166MHz ，256KB eNVM，64KB eSRAM，集成 GPIO、UART、I2C、SPI、CAN、USB 等基本外设。
+  emulator_machine: ''
+  large_image: documents/images/board_large.png
+  name: M2S010-MICROSEMI-BD
+  price_cn: 238.00 CNY
+  price_global: 35.00 USD
+  sale_contact_cn: https://www.microsemi.com/existing-parts/parts/144012
+  sale_contact_global: https://www.microsemi.com/existing-parts/parts/144012
+  small_image: documents/images/board_small.png
+  vendor: MICROSEMI
+  version: Rev.A
+chip:
+  chip_name: M2S010
+  clock_source: ''
+  device_vendor: MICROSEMI
+  family_name: ''
+  rx_name: ''
+  series_name: ''
+  source_freq: ''
+  sub_series_name: M2S010
+  target_freq: '50000000'
+  tx_name: ''
+  uart_name: 'UART0'
+docs:
+- category: sheet
+  file: documents/sheet/datasheet.pdf
+  title: SmartFusion2 SoC FPGA Product Brief
+example_projects: []
+features:
+- The SmartFusion2 M2S010 SoC FPGA
+- Ambient Light Sensor
+- 16Mbit SPI Flash
+- 8 User LEDs
+- USB Integrated FlashPro5 programming hardware
+- Laid out footprint for ESP32 (not included)
+- USB port for UART communications
+- LX7167ACLD-TR powering the board
+- 50 MHz clock source
+- 2 user pushbuttons
+features_zh:
+- The SmartFusion2 M2S010 SoC FPGA
+- 环境光传感器
+- 16Mbit SPI Flash
+- 8 个 LED
+- 集成 USB 的 FlashPro5 编程硬件
+- 预留 ESP32 模块焊盘
+- 用于 UART 通信的 USB 端口
+- LX7167ACLD-TR powering the board
+- 50 MHz 时钟源
+- 2 个按键
+pkg_type: Board_Support_Packages
+pkg_vendor: RealThread
+pkg_version: 1.0.0
+template_projects:
+- builtin_files:
+  - files_and_folders:
+    - .config
+    - .cproject
+    - .project
+    - .settings
+    - applications
+    - board
+    - cconfig.h
+    - CMSIS
+    - drivers
+    - figures
+    - Kconfig
+    - libraries
+    - README.md
+    - makefile.targets
+    - rtconfig.h
+    - rtconfig.py
+    - rtconfig_preinc.h
+    - SConscript
+    - SConstruct
+    source_path_offset: rtt_default_project_0
+    target_path_offset: ''
+  external_files:
+  - files_and_folders:
+    - components
+    - include
+    - libcpu/arm
+    - libcpu/Kconfig
+    - libcpu/SConscript
+    - src
+    - tools
+    - Kconfig
+    - LICENSE
+    package_name: RT-Thread
+    package_type: RT-Thread_Source_Code
+    package_vendor: ''
+    package_version: latest
+    source_path_offset: rt-thread
+    target_path_offset: rt-thread
+  project_description: ''
+  project_name: ''
+  project_type: rt-thread|@full|@latest
+yaml_version: 3
